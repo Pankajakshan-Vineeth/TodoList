@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../Components/TodoItem.css';
 
 const TodoItem = ({ todo }) => {
 
@@ -9,7 +10,7 @@ const TodoItem = ({ todo }) => {
   };
 
   return (
-    <div>
+    <div className='item'>
       <span style={{ textDecoration: completed ? 'line-through' : 'none' }}>
         {todo.text}
       </span>
